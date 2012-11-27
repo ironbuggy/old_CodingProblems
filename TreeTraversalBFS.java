@@ -4,7 +4,7 @@ public class TreeTraversalBFS {
 	
 	public static void main(String[] args) 
 	{
-		System.out.println("Iterative:");
+		System.out.print("Iterative:");
 		BFSIterative(TreeNode.SampleTree1);
 		
 		// difficult to do recursion because BFS builds on the concept of a queue
