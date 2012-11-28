@@ -54,6 +54,11 @@ public class TreeNode {
 	}	
 	
 	public static final TreeNode SampleTree1;
+	/*
+	 *         10
+	 *     20       50
+	 *   5   #    35  15
+	 */
 	static
 	{
 		SampleTree1 = new TreeNode(10);

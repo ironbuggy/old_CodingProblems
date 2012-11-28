@@ -3,7 +3,7 @@ public class DecodeRomanNumeral
 {
 	public static final int[] Numbers = {1,5,10,50,100,500,1000,5000,10000,50000,100000,500000,1000000};
 	public static final char[] RomanNumerals = {'I','V','X','L','C','D','M','v','x','l','c','d','m'};
-	public static String convertToNumber = "IX"; 
+	public static String convertToNumber = ""; 
 
 	public static void main(String[] args) 
 	{

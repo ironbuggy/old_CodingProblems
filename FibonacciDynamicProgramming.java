@@ -30,7 +30,7 @@ public class FibonacciDynamicProgramming {
 	
 	public static int fib(int number) {
 		
-		if (fibArray[number]==-1) {
+		if (fibArray[number] == -1) {
 			fibArray[number] = fib(number-1) + fib(number-2);
 		}
 		

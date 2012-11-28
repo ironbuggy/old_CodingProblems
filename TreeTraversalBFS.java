@@ -4,20 +4,21 @@ public class TreeTraversalBFS {
 	
 	public static void main(String[] args) 
 	{
-		System.out.print("Iterative:");
-		BFSIterative(TreeNode.SampleTree1);
+		System.out.print(BFSIterative(TreeNode.SampleTree1));
 		
-		// difficult to do recursion because BFS builds on the concept of a queue
+		// difficult to do recursion since BFS builds on the concept of a queue
 		// so to use the call stack as a queue will be difficult
 	}
 
-	public static void BFSIterative(TreeNode root)
+	public static ArrayList<Integer> BFSIterative(TreeNode root)
 	{
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		
 		ArrayList<TreeNode> nodesToVisit = new ArrayList<TreeNode>();
 		
 		if (root == null)
 		{
-			return;
+			return (result);
 		}
 		
 		nodesToVisit.add(root);
@@ -28,18 +29,19 @@ public class TreeTraversalBFS {
 						
 			if(n == null)
 			{
-				System.out.print(" #");
 				continue;
 			}
 			else
 			{
-				System.out.print(" " + n.getValue());
+				result.add(n.getValue());
 			}
 			
 			nodesToVisit.add(n.getLeft());
 			
 			nodesToVisit.add(n.getRight());
 		}
+		
+		return(result);
 	}
 }
 
